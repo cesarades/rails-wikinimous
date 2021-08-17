@@ -1,0 +1,5 @@
+<h1><%= @article.title %></h1>
+<p><%= @article.content %></p>
+<%= link_to 'Home', '/articles' %>
+<%= link_to 'Edit', "#{article_path(@article)}/edit" %>
+<%= link_to 'Delete', article_path(@article), method: :delete, data: { :confirm => "You sure?" } %>
